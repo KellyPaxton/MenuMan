@@ -10,7 +10,7 @@ import { ThemedView } from '@/components/ThemedView';
 export default function TabTwoScreen() {
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
+      headerBackgroundColor={{ light: '#f1f1f1', dark: '#121212' }}
       headerImage={<Ionicons size={310} name="code-slash" style={styles.headerImage} />}>
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Explore</ThemedText>
@@ -42,7 +42,10 @@ export default function TabTwoScreen() {
           <ThemedText type="defaultSemiBold">@3x</ThemedText> suffixes to provide files for
           different screen densities
         </ThemedText>
-        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
+        <Image source={require('@/assets/images/menuMan.png')} style={{ alignSelf: 'center' }} />
+        
+          {/* REMOVE EXTERNAL LINK REFERENCE BACAUSE MENUMAN.PNG IS A LOCAL ASSET */}
+
         <ExternalLink href="https://reactnative.dev/docs/images">
           <ThemedText type="link">Learn more</ThemedText>
         </ExternalLink>
